@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://gist.github.com/ai-worm/schemas/xen/book-schema.json",
+    "id": "https://github.com/Allinventor/Project-Xen/blob/main/schemas/book-schema.json",
     "title": "Book schema",
     "description": "The Schema for a book in a Xen Project",
     "type": "object",

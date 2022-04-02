@@ -1,0 +1,62 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://github.com/Allinventor/Project-Xen/blob/main/schemas/digital-novel/index-schema.json",
+    "title": "Digital Novel Schema",
+    "description": "A digital novel is a collection of digital content that is intended to be read in a single session or sessions. Digital novels are often published as a single book, but may also be published as a collection of individual books, each of which is a separate digital novel.",
+    "type": "object",
+    "properties": {
+        "meta": {
+            "type": "object",
+            "description": "Metadata about the digital novel.",
+            "properties": {
+                "title": {
+                    "type": "string",
+                    "description": "The title of the digital novel."
+                },
+                "author": {
+                    "type": "string",
+                    "description": "The author of the digital novel."
+                },
+                "publisher": {
+                    "type": "string",
+                    "description": "The publisher of the digital novel."
+                },
+                "release_date_time": {
+                    "type": "string",
+                    "description": "The date of publication of the digital novel."
+                }, 
+                "language": {
+                    "type": "string",
+                    "description": "The language of the digital novel."
+                },
+                "synopsis": {
+                    "type": "string",
+                    "description": "A short description of the digital novel."
+                },
+                "cover": {
+                    "type": "string",
+                    "description": "The URL of the cover image of the digital novel."
+                },
+                "tags": {
+                    "type": "array",
+                    "description": "A list of tags associated with the digital novel.",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "style": {
+            "description": "Text style",
+            "$ref": "https://github.com/Allinventor/Project-Xen/blob/main/schemas/style-schema.json"
+        },
+        "chapters": {
+            "type": "array",
+            "description": "A list of chapters in the digital novel.",
+            "items": {
+                "description": "A chapter in the digital novel.",
+                "$ref": "https://github.com/Allinventor/Project-Xen/blob/main/schemas/digital-novel/chapter-schema.json"
+            }
+        }
+    }
+}
