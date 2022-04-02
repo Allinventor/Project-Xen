@@ -17,6 +17,10 @@
             "type": "number",
             "description": "The version of the chapter"
         },
+        "description": {
+            "type": "string",
+            "description": "The description of the chapter"
+        },
         "blocks": {
             "type": "array",
             "description": "The content blocks of the chapter",

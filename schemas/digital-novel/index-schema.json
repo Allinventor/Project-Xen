@@ -14,12 +14,16 @@
                     "description": "The title of the digital novel."
                 },
                 "author": {
-                    "type": "string",
-                    "description": "The author of the digital novel."
+                    "description": "The author of the digital novel.",
+                    "$ref": "https://github.com/Allinventor/Project-Xen/blob/main/schemas/account-types/author-schema.json"
+                },
+                "illustrator": {
+                    "description": "The illustrator of the digital novel.",
+                    "$ref": "https://github.com/Allinventor/Project-Xen/blob/main/schemas/account-types/illustrator-schema.json"
                 },
                 "publisher": {
-                    "type": "string",
-                    "description": "The publisher of the digital novel."
+                    "description": "The publisher of the digital novel.",
+                    "$ref": "https://github.com/Allinventor/Project-Xen/blob/main/schemas/account-types/publisher-schema.json"
                 },
                 "release_date_time": {
                     "type": "string",
@@ -43,6 +47,13 @@
                     "items": {
                         "type": "string"
                     }
+                },
+                "categories": {
+                    "type": "array",
+                    "description": "A list of categories associated with the digital novel.",
+                    "items": {
+                        "type": "string"
+                    }
                 }
             }
         },
@@ -54,8 +65,8 @@
             "type": "array",
             "description": "A list of chapters in the digital novel.",
             "items": {
-                "description": "A chapter in the digital novel.",
-                "$ref": "https://github.com/Allinventor/Project-Xen/blob/main/schemas/digital-novel/chapter-schema.json"
+                "type": "string",
+                "description": "A chapter in the digital novel."
             }
         }
     }

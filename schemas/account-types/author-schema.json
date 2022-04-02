@@ -1,0 +1,25 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://github.com/Allinventor/Project-Xen/blob/main/schemas/account-types/author-schema.json",
+    "title": "Author",
+    "description": "Author schema",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "string",
+            "description": "Author id"
+        },
+        "name": {
+            "type": "string",
+            "description": "Author's name"
+        },
+        "surname": {
+            "type": "string",
+            "description": "Author's surname/last name"
+        },
+        "email": {
+            "type": "string",
+            "description": "Author's email"
+        }
+    }
+}
