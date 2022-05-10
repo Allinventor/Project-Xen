@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "https://github.com/Allinventor/Project-Xen/blob/main/schemas/book-index.json",
+    "$id": "https://raw.githubusercontent.com/Allinventor/Project-Xen/main/schemas/book-index.json",
     "title": "Book Object",
     "description": "A book object",
     "type": "object",
