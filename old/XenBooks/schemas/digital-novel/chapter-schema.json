@@ -1,0 +1,32 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://github.com/Allinventor/Project-Xen/blob/main/schemas/digital-novel/chapter-schema.json",
+    "title": "Digital Novel Chapter Schema",
+    "description": "Schema for a digital novel chapter",
+    "type": "object",
+    "properties": {
+        "title": {
+            "type": "string",
+            "description": "The title of the chapter"
+        },
+        "release_date_time": {
+            "type": "string",
+            "description": "The date and time the chapter was released"
+        },
+        "version": {
+            "type": "number",
+            "description": "The version of the chapter"
+        },
+        "description": {
+            "type": "string",
+            "description": "The description of the chapter"
+        },
+        "blocks": {
+            "type": "array",
+            "description": "The content blocks of the chapter",
+            "items": {
+                "$ref": "https://github.com/Allinventor/Project-Xen/blob/main/schemas/digital-novel/block-schema.json"
+            }
+        }
+    }
+}

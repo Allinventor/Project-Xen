@@ -1,0 +1,20 @@
+{
+    "id": "caine.hall.gutenberg.org.xenbooks.public.community",
+    "persona_owner": "gutenberg.org.xenbooks.public.community",
+    "persona_faction": "xenbooks",
+    "persona_name": "Caine Hall",
+    "tag_name": "Caine_Hall",
+    "description": "A British Author that lived from the 14th of May 1853 to the 31st of August 1931.",
+    "birthday": {
+        "calendar": "Gregorian Calendar",
+        "month": 5,
+        "day": 14,
+        "year": 1853
+    },
+    "deathday": {
+        "calendar": "Gregorian Calendar",
+        "month": 8,
+        "day": 31,
+        "year": 1931
+    }
+}

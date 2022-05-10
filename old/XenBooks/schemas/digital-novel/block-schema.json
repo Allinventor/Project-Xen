@@ -1,0 +1,145 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://github.com/Allinventor/Project-Xen/blob/main/schemas/digital-novel/block-schema.json",
+    "title": "Block Schema",
+    "description": "Schema for a block of content",
+    "type": "object",
+    "properties": {
+        "style": {
+            "description": "Block style",
+            "$ref": "https://github.com/Allinventor/Project-Xen/blob/main/schemas/style-schema.json"
+        },
+        "section": {
+            "description": "Section block",
+            "$ref": "https://github.com/Allinventor/Project-Xen/blob/main/schemas/digital-novel/block-schema.json"
+        },
+        "header": {
+            "type": "object",
+            "description": "Header block",
+            "properties": {
+                "heading": {
+                    "enum": ["h1", "h2", "h3", "h4", "h5", "h6"]
+                },
+                "content": {
+                    "description": "Content of the header",
+                    "$ref": "https://github.com/Allinventor/Project-Xen/blob/main/schemas/text-schema.json"
+                }
+            }
+        },
+        "paragraph": {
+            "description": "Paragraph block",
+            "$ref": "https://github.com/Allinventor/Project-Xen/blob/main/schemas/text-schema.json"
+        },
+        "quote": {
+            "description": "Quote block",
+            "$ref": "https://github.com/Allinventor/Project-Xen/blob/main/schemas/text-schema.json"
+        },
+        "code": {
+            "description": "Code block",
+            "$ref": "https://github.com/Allinventor/Project-Xen/blob/main/schemas/text-schema.json"
+        },
+        "list": {
+            "type": "array",
+            "description": "List block",
+            "items": {
+                "description": "List item",
+                "$ref": "https://github.com/Allinventor/Project-Xen/blob/main/schemas/text-schema.json"
+            }
+        },
+        "image": {
+            "type": "object",
+            "description": "Image block",
+            "properties": {
+                "src": {
+                    "description": "Source of the image",
+                    "type": "string"
+                },
+                "alt": {
+                    "description": "Alternative text for the image",
+                    "type": "string",
+                    "default": "Image Not Found"
+                },
+                "caption": {
+                    "description": "Caption for the image",
+                    "$ref": "https://github.com/Allinventor/Project-Xen/blob/main/schemas/text-schema.json"
+                }
+            }
+        },
+        "video": {
+            "type": "object",
+            "description": "Video block",
+            "properties": {
+                "src": {
+                    "description": "Source of the video",
+                    "type": "string"
+                },
+                "track": {
+                    "description": "Track of the video",
+                    "type": "object",
+                    "properties": {
+                        "src": {
+                            "description": "Source of the track",
+                            "type": "string"
+                        },
+                        "kind": {
+                            "description": "Kind of the track",
+                            "enum": ["captions", "chapters", "descriptions", "metadata", "subtitles"]
+                        },
+                        "srclang": {
+                            "description": "Language of the track",
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "audio": {
+            "type": "object",
+            "description": "Audio block",
+            "properties": {
+                "src": {
+                    "description": "Source of the audio",
+                    "type": "string"
+                },
+                "track": {
+                    "description": "Track of the audio",
+                    "type": "object",
+                    "properties": {
+                        "src": {
+                            "description": "Source of the track",
+                            "type": "string"
+                        },
+                        "kind": {
+                            "description": "Kind of the track",
+                            "enum": ["captions", "chapters", "descriptions", "metadata", "subtitles"]
+                        },
+                        "srclang": {
+                            "description": "Language of the track",
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "table": {
+            "type": "array",
+            "description": "Table block",
+            "items": {
+                "type": "array",
+                "description": "Table row",
+                "items": {
+                    "description": "Table cell",
+                    "$ref": "https://github.com/Allinventor/Project-Xen/blob/main/schemas/text-schema.json"
+                }
+            }
+        },
+        "footer": {
+            "type": "array",
+            "description": "Footer block for footnotes",
+            "items": {
+                "description": "Footnote",
+                "$ref": "https://github.com/Allinventor/Project-Xen/blob/main/schemas/text-schema.json"
+            }
+        }
+    }
+}

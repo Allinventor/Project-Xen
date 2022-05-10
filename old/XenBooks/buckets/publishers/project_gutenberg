@@ -1,0 +1,22 @@
+{
+    "id": "gutenberg.org.xenbooks.public.community",
+    "persona_owner": "xenbooks.public.community",
+    "persona_faction": "xenbooks",
+    "persona_name": "Project Gutenberg",
+    "tag_name": "project_gutenberg",
+    "description": "Project Gutenberg is a free online archive of electronic texts, created by volunteers and hosted by the non-profit Project Gutenberg Online Distributed Proofreading Team. It is the largest collection of free e-texts in the world. Project Gutenberg is a non-profit organization, not a commercial entity, and does not make money from its work. \n It is not affiliated with any of the other organizations listed below. \n It is not a registered trademark of Project Gutenberg, Inc. The Project Gutenberg logo is a trademark of Project Gutenberg, Inc. \n \n XenBooks does not own or control the Project Gutenberg books. They are available for free to anyone with or without an account. XenBooks does manage the Project Gutenberg Publisher Account under the XenBooks Public Community Publisher Account, however XenBooks does not make any money from the Project Gutenberg books. If you wish to donate to Project Gutenberg, please visit [http://www.gutenberg.org/donate/](http://www.gutenberg.org/donate/) or click the link above. \n XenBooks wishes happy reading to all who have enjoyed the Project Gutenberg books, and any other books that may be available for online.",
+    "links": [
+        {
+            "title": "Donate",
+            "url": "http://www.gutenberg.org/",
+            "description": "Donate to Project Gutenberg",
+            "type": "primary"
+        },
+        {
+            "title": "Visit Project Gutenberg",
+            "url": "http://www.gutenberg.org/",
+            "description": "Visit the Project Gutenberg website",
+            "type": "secondary"
+        }
+    ]
+}

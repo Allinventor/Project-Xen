@@ -1,0 +1,78 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://github.com/Allinventor/Project-Xen/blob/main/schemas/persona-schema.json",
+    "title": "Persona Schema",
+    "description": "A schema for a persona",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "string",
+            "description": "The unique identifier for the persona",
+            "unique": true
+        },
+        "public-key": {
+            "type": "string",
+            "description": "The public key for the persona, used to encrypt the persona's data in the database as a secondary method of encryption",
+            "unique": true
+        },
+        "private-key": {
+            "type": "string",
+            "description": "The private key for the persona, used to encrypt the persona's data before storing it in the database",
+            "unique": true
+        },
+        "secret-key": {
+            "type": "string",
+            "description": "The secret key for the persona, used to change or update your private key and public key while not being saved in the database."
+        },
+        "persona_owner_id": {
+            "type": "array",
+            "description": "The unique identifiers for the persona(s) that own this persona, if any",
+            "items": {
+                "type": "string"
+            }
+        },
+        "persona_owns_id": {
+            "type": "array",
+            "description": "The unique identifiers for the persona(s) this persona owns, if any",
+            "items": {
+                "type": "string"
+            }
+        },
+        "persona_faction_id": {
+            "type": "string",
+            "description": "The unique identifier of the persona's faction, if any"
+        },
+        "persona_faction_tag": {
+            "type": "string",
+            "description": "The unique identifier for the persona in a faction, if any. Used to identify the persona in a faction.",
+            "unique": true
+        },
+        "persona_type": {
+            "type": "string",
+            "description": "The type of persona",
+            "enum": [
+                "user",
+                "player",
+                "admin",
+                "moderator",
+                "developer",
+                "tester",
+                "bot",
+                "retired",
+                "anonymous"
+            ]
+        },
+        "persona_name": {
+            "type": "string",
+            "description": "The name of the persona, otherwise known as the display name"
+        },
+        "persona_description": {
+            "type": "string",
+            "description": "A description of the persona, such as a biography"
+        },
+        "faction_settings": {
+            "type": "object",
+            "description": "A set of settings for the persona's faction, if any"
+        }
+    }
+}

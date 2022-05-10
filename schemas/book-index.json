@@ -1,0 +1,295 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://github.com/Allinventor/Project-Xen/blob/main/schemas/book-index.json",
+    "title": "Book Object",
+    "description": "A book object",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "string",
+            "description": "The unique identifier of the book"
+        },
+        "language": {
+            "type": "string",
+            "description": "The language of the book"
+        },
+        "title": {
+            "type": "string",
+            "description": "The title of the book"
+        },
+        "authors": {
+            "type": "array",
+            "description": "The authors of the book",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "description": "The name of the author"
+                    },
+                    "id": {
+                        "type": "string",
+                        "description": "The id of the author"
+                    }
+                }
+            }
+        },
+        "translators": {
+            "type": "array",
+            "description": "The translators of the book",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "description": "The name of the translator"
+                    },
+                    "id": {
+                        "type": "string",
+                        "description": "The id of the translator"
+                    }
+                }
+            }
+        },
+        "publishers": {
+            "type": "array",
+            "description": "The publishers of the book",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "description": "The name of the publisher"
+                    },
+                    "id": {
+                        "type": "string",
+                        "description": "The id of the publisher"
+                    }
+                }
+            }
+        },
+        "dates": {
+            "type": "object",
+            "description": "The dates of the book",
+            "properties": {
+                "published": {
+                    "type": "string",
+                    "description": "The date of publication"
+                },
+                "created": {
+                    "type": "string",
+                    "description": "The date of creation"
+                },
+                "updated": {
+                    "type": "string",
+                    "description": "The date of last update"
+                }
+            }
+        },
+        "genres": {
+            "type": "array",
+            "description": "The genres of the book",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "description": "The name of the genre"
+                    },
+                    "id": {
+                        "type": "string",
+                        "description": "The id of the genre"
+                    }
+                }
+            }
+        },
+        "categories": {
+            "type": "array",
+            "description": "The categories of the book",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "description": "The name of the category"
+                    },
+                    "id": {
+                        "type": "string",
+                        "description": "The id of the category"
+                    }
+                }
+            }   
+        },
+        "tags": {
+            "type": "array",
+            "description": "The tags of the book",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "description": "The name of the tag"
+                    },
+                    "id": {
+                        "type": "string",
+                        "description": "The id of the tag"
+                    }
+                }
+            }
+        },
+        "synopsis": {
+            "type": "string",
+            "description": "The synopsis of the book"
+        },
+        "description": {
+            "type": "string",
+            "description": "The description of the book"
+        },
+        "images": {
+            "type": "array",
+            "description": "The images of the book",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "string",
+                        "description": "The id of the image"
+                    },
+                    "purpose": {
+                        "enum": ["cover", "thumbnail", "banner", "square", "portrait", "landscape"],
+                        "description": "The purpose of the image: cover, thumbnail, banner, audioBook"
+                    },
+                    "url": {
+                        "type": "string",
+                        "description": "The url of the image"
+                    }
+                }
+            }
+        },
+        "volumes": {
+            "type": "array",
+            "description": "The volumes of the book",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "string",
+                        "description": "The id of the volume"
+                    },
+                    "title": {
+                        "type": "string",
+                        "description": "The title of the volume"
+                    },
+                    "order": {
+                        "type": "integer",
+                        "description": "The order of the volume"
+                    },
+                    "dates": {
+                        "type": "object",
+                        "description": "The dates of the volume",
+                        "properties": {
+                            "published": {
+                                "type": "string",
+                                "description": "The date of publication"
+                            },
+                            "created": {
+                                "type": "string",
+                                "description": "The date of creation"
+                            },
+                            "updated": {
+                                "type": "string",
+                                "description": "The date of last update"
+                            }
+                        }
+                    },
+                    "description": {
+                        "type": "string",
+                        "description": "The description of the volume"
+                    },
+                    "thumbnail": {
+                        "type": "object",
+                        "description": "The thumbnail of the volume",
+                        "properties": {
+                            "id": {
+                                "type": "string",
+                                "description": "The id of the thumbnail"
+                            },
+                            "url": {
+                                "type": "string",
+                                "description": "The url of the thumbnail"
+                            }
+                        }
+                    },
+                    "url": {
+                        "type": "string",
+                        "description": "The url of the volume"
+                    },
+                    "chapters": {
+                        "type": "array",
+                        "description": "The chapters of the volume",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "string",
+                                    "description": "The id of the chapter"
+                                    },
+                                "title": {
+                                    "type": "string",
+                                    "description": "The title of the chapter"
+                                },
+                                "order": {
+                                    "type": "integer",
+                                    "description": "The order of the chapter"
+                                },
+                                "dates": {
+                                    "type": "object",
+                                    "description": "The dates of the chapter",
+                                    "properties": {
+                                        "published": {
+                                            "type": "string",
+                                            "description": "The date of publication"
+                                        },
+                                        "created": {
+                                            "type": "string",
+                                            "description": "The date of creation"
+                                        },
+                                        "updated": {
+                                            "type": "string",
+                                            "description": "The date of last update"
+                                        }
+                                    }
+                                },
+                                "description": {
+                                    "type": "string",
+                                    "description": "The description of the chapter"
+                                },
+                                "thumbnail": {
+                                    "type": "object",
+                                    "description": "The thumbnail of the chapter",
+                                    "properties": {
+                                        "id": {
+                                            "type": "string",
+                                            "description": "The id of the thumbnail"
+                                        },
+                                        "url": {
+                                            "type": "string",
+                                            "description": "The url of the thumbnail"
+                                        }
+                                    }
+                                },
+                                "url": {
+                                    "type": "string",
+                                    "description": "The url of the chapter"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+
+    }
+}

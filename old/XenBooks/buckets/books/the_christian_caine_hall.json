@@ -1,0 +1,19 @@
+{
+    "id": "the.christian.caine.hall.gutenberg.org",
+    "title": "The Christian: A Story",
+    "language": "English",
+    "authors": ["caine.hall.gutenberg.org.xenbooks.public.community"],
+    "publisher": "gutenberg.org.xenbooks.public.community",
+    "category": "Digital Novel",
+    "genre": "Fiction",
+    "tags": ["Religion", "Christianity"],
+    "synopsis": "The Christian: A Story, is a novel by Christian author Caine Hall. It was first published in 1876. It is a story of the Christian religion and the Christian character. \n \n Project Gutenberg  \n \n This eBook is for the use of anyone anywhere at no cost and with almost no restrictions whatsoever.  You may copy it, give it away or re-use it under the terms of the Project Gutenberg License included with this eBook or online at www.gutenberg.org \n Produced by Charles Aldarondo, Tiffany Vergon, Thomas Berger, and the Online Distributed Proofreading Team \n \n _The period of the story is the last quarter of the nineteenth century. No particular years are intended. The time occupied by the incidents of the first Book is about six months, of the Second Book about six months, of the Third Book about six months; then there is an interval of half a year, and the time occupied by the incidents of the Fourth Book is about six weeks. An Author's Note will be found at the end._",
+    "links": [
+        {
+            "title": "Gutenberg Source",
+            "url": "https://www.gutenberg.org/ebooks/8407",
+            "description": "The source site for this book is available at Project Gutenberg.",
+            "type": "secondary"
+        }
+    ]
+}
