@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$id": "https://raw.githubusercontent.com/Allinventor/Project-Xen/main/schemas/subgenre.json",
+    "title": "SubGenre Object",
+    "description": "A subgenre object",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "string",
+            "description": "The unique identifier for the subgenre"
+        },
+        "name": {
+            "type": "string",
+            "description": "The name of the subgenre"
+        },
+        "description": {
+            "type": "string",
+            "description": "The description of the subgenre"
+        }
+    }
+}

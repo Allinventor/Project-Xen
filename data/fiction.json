@@ -1,0 +1,7 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Allinventor/Project-Xen/main/schemas/genre.json",
+    "id": "fiction",
+    "title": "Fiction",
+    "description": "Fiction is a genre of literature that is typically a broad category that includes many subgenres, including American fiction, British fiction, European fiction, American novels, British novels, European novels, and short stories."
+
+}

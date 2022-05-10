@@ -16,6 +16,18 @@
         "description": {
             "type": "string",
             "description": "The description of the genre"
+        },
+        "subgenres": {
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/Allinventor/Project-Xen/main/schemas/subgenre.json"
+            },
+            "description": "The subgenres of the genre"
         }
-    }
+    },
+    "required": [
+        "id",
+        "name",
+        "description"
+    ]
 }
