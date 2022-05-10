@@ -1,0 +1,103 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$id": "https://raw.githubusercontent.com/Allinventor/Project-Xen/main/schemas/book-chapter.json",
+    "title": "Book Chapter Object",
+    "description": "A book chapter object",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "string",
+            "description": "The unique identifier of the book chapter"
+        },
+        "title": {
+            "type": "string",
+            "description": "The title of the book chapter"
+        },
+        "order": {
+            "type": "integer",
+            "description": "The order of the book chapter"
+        },
+        "dates": {
+            "type": "object",
+            "description": "The dates of the chapter",
+            "properties": {
+                "published": {
+                    "type": "string",
+                    "description": "The date of publication"
+                },
+                "created": {
+                    "type": "string",
+                    "description": "The date of creation"
+                },
+                "updated": {
+                    "type": "string",
+                    "description": "The date of last update"
+                }
+            }
+        },
+        "description": {
+            "type": "string",
+            "description": "The description of the chapter"
+        },
+        "thumbnail": {
+            "type": "object",
+            "description": "The thumbnail of the chapter",
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "description": "The id of the thumbnail"
+                },
+                "url": {
+                    "type": "string",
+                    "description": "The url of the thumbnail"
+                }
+            }
+        },
+        "url": {
+            "type": "string",
+            "description": "The url of the chapter"
+        },
+        "content": {
+            "type": "array",
+            "description": "The content of the chapter",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "string",
+                        "description": "The id of the content"
+                    },
+                    "type": {
+                        "type": "string",
+                        "description": "The type of the content"
+                    },
+                    "text": {
+                        "type": "string",
+                        "description": "The text of the content"
+                    },
+                    "style": {
+                        "type": "array",
+                        "description": "The style of the content",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "string",
+                                    "description": "The id of the style"
+                                },
+                                "name": {
+                                    "type": "string",
+                                    "description": "The name of the style"
+                                },
+                                "value": {
+                                    "type": "string",
+                                    "description": "The value of the style"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

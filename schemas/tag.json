@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$id": "https://raw.githubusercontent.com/Allinventor/Project-Xen/main/schemas/tag.json",
+    "title": "Tag Object",
+    "description": "Tag Object",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "string",
+            "description": "Tag ID"
+        },
+        "name": {
+            "type": "string",
+            "description": "Tag Name"
+        },
+        "description": {
+            "type": "string",
+            "description": "Tag Description"
+        }
+    }
+}
