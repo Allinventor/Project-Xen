@@ -71,9 +71,161 @@
                         "type": "string",
                         "description": "The type of the content"
                     },
-                    "text": {
-                        "type": "string",
-                        "description": "The text of the content"
+                    "data": {
+                        "type": "array",
+                        "description": "The data of the content",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "string",
+                                    "description": "The id of the data"
+                                },
+                                "type": {
+                                    "type": "string",
+                                    "description": "The type of the data"
+                                },
+                                "layers": {
+                                    "type": "array",
+                                    "description": "The layers of the data",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "id": {
+                                                "type": "string",
+                                                "description": "The id of the layer"
+                                            },
+                                            "type": {
+                                                "type": "string",
+                                                "description": "The type of the layer"
+                                            },
+                                            "blocks": {
+                                                "type": "array",
+                                                "description": "The blocks of the layer",
+                                                "items": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "id": {
+                                                            "type": "string",
+                                                            "description": "The id of the block"
+                                                        },
+                                                        "type": {
+                                                            "type": "string",
+                                                            "description": "The type of the block"
+                                                        },
+                                                        "data": {
+                                                            "type": "array",
+                                                            "description": "The data of the block",
+                                                            "items": {
+                                                                "type": "object",
+                                                                "properties": {
+                                                                    "id": {
+                                                                        "type": "string",
+                                                                        "description": "The id of the data"
+                                                                    },
+                                                                    "type": {
+                                                                        "type": "string",
+                                                                        "description": "The type of the data"
+                                                                    },
+                                                                    "data": {
+                                                                        "type": "string",
+                                                                        "description": "The data of the data"
+                                                                    },
+                                                                    "style": {
+                                                                        "type": "array",
+                                                                        "description": "The style of the data",
+                                                                        "items": {
+                                                                            "type": "object",
+                                                                            "properties": {
+                                                                                "id": {
+                                                                                    "type": "string",
+                                                                                    "description": "The id of the style"
+                                                                                },
+                                                                                "name": {
+                                                                                    "type": "string",
+                                                                                    "description": "The name of the style"
+                                                                                },
+                                                                                "value": {
+                                                                                    "type": "string",
+                                                                                    "description": "The value of the style"
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        },
+                                                        "style": {
+                                                            "type": "array",
+                                                            "description": "The style of the block",
+                                                            "items": {
+                                                                "type": "object",
+                                                                "properties": {
+                                                                    "id": {
+                                                                        "type": "string",
+                                                                        "description": "The id of the style"
+                                                                    },
+                                                                    "name": {
+                                                                        "type": "string",
+                                                                        "description": "The name of the style"
+                                                                    },
+                                                                    "value": {
+                                                                        "type": "string",
+                                                                        "description": "The value of the style"
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "style": {
+                                                "type": "array",
+                                                "description": "The style of the layer",
+                                                "items": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "id": {
+                                                            "type": "string",
+                                                            "description": "The id of the style"
+                                                        },
+                                                        "name": {
+                                                            "type": "string",
+                                                            "description": "The name of the style"
+                                                        },
+                                                        "value": {
+                                                            "type": "string",
+                                                            "description": "The value of the style"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "style": {
+                                    "type": "array",
+                                    "description": "The style of the data",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "id": {
+                                                "type": "string",
+                                                "description": "The id of the style"
+                                            },
+                                            "name": {
+                                                "type": "string",
+                                                "description": "The name of the style"
+                                            },
+                                            "value": {
+                                                "type": "string",
+                                                "description": "The value of the style"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
                     },
                     "style": {
                         "type": "array",
